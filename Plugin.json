@@ -1,0 +1,37 @@
+{
+    "PluginName": "ChatGLM聊天插件",
+    "DependentLibraries": ["zhipuai"],
+    "PluginIcon": null,
+    "PluginAuthor": "AEBC08",
+    "MainPyName": "ChatGLM-Plugin",
+    "PluginDescription": "一个调用 ChatGLM 官方 API 进行 AI 聊天的插件",
+    "EnablePlugin": true,
+    "ChatGLMApiKey": "941ac97d423405fa7c0a1c305cb526cb.E5ysCwSiQ49Hzo5X",
+    "ChatGLMSessionLimit": 100,
+
+    "Help": [
+        {
+            "Class": "ChatGLM",
+            "Commands": [
+                {
+                    "Command": "/GLM + [空格] + [内容]",
+                    "Content": "与 ChatGLM 进行聊天"
+                },
+                {
+                    "Command": "/GLM新的会话",
+                    "Content": "清除 ChatGLM 的聊天记录, 开始新的会话"
+                }
+            ]
+        },
+        {
+            "Class": "ChatGLM设置(仅 Bot 管理员可用)",
+            "AdminUse": true,
+            "Commands": [
+                {
+                    "Command": "/GLMApiKey + [空格] + [ApiKey]",
+                    "Content": "设置ChatGLM 的 ApiKey(警告: ApiKey 是很重要的东西, 请不要在群聊内设置 ApiKey, 发在群聊内可能会被他人恶意利用!!!)"
+                }
+            ]
+        }
+    ]
+}
