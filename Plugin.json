@@ -1,35 +1,24 @@
 {
-    "PluginName": "ChatGLM聊天插件",
-    "DependentLibraries": ["zhipuai"],
+    "PluginName": "网易云音乐插件",
+    "DependentLibraries": null,
+    "IsLibraries": false,
     "PluginIcon": null,
     "PluginAuthor": "AEBC08",
-    "MainPyName": "ChatGLM-Plugin",
-    "PluginDescription": "一个调用 ChatGLM 官方 API 进行 AI 聊天的插件",
+    "MainPyName": "NCMPlugin",
+    "PluginDescription": "一个网易云音乐搜歌与点歌的插件",
     "EnablePlugin": true,
-    "ChatGLMApiKey": "941ac97d423405fa7c0a1c305cb526cb.E5ysCwSiQ49Hzo5X",
-    "ChatGLMSessionLimit": 100,
 
     "Help": [
         {
-            "Class": "ChatGLM",
+            "Class": "网易云音乐",
             "Commands": [
                 {
-                    "Command": "/GLM + [空格] + [内容]",
-                    "Content": "与 ChatGLM 进行聊天"
+                    "Command": "/搜歌 + [空格] + [内容] + (可选参数){可选参数: [空格] + 数量 + [1 <= 数字 <= 30]; [空格] + 偏移 + [0 <= 数字 <= 30]}",
+                    "Content": "使用网易云音乐的 API 搜歌"
                 },
                 {
-                    "Command": "/GLM新的会话",
-                    "Content": "清除 ChatGLM 的聊天记录, 开始新的会话"
-                }
-            ]
-        },
-        {
-            "Class": "ChatGLM设置(仅 Bot 管理员可用)",
-            "AdminUse": true,
-            "Commands": [
-                {
-                    "Command": "/GLMApiKey + [空格] + [ApiKey]",
-                    "Content": "设置ChatGLM 的 ApiKey(警告: ApiKey 是很重要的东西, 请不要在群聊内设置 ApiKey, 发在群聊内可能会被他人恶意利用!!!)"
+                    "Command": "/点歌 + [空格] + [序号]",
+                    "Content": "搜完歌之后使用该指令点歌"
                 }
             ]
         }
