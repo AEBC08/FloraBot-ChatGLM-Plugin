@@ -6,7 +6,7 @@
     "MainPyName": "ChatGLM-Plugin",
     "PluginDescription": "一个调用 ChatGLM 官方 API 进行 AI 聊天的插件",
     "EnablePlugin": true,
-    "ChatGLMApiKey": "941ac97d423405fa7c0a1c305cb526cb.E5ysCwSiQ49Hzo5X",
+    "ChatGLMApiKey": "",
     "ChatGLMSessionLimit": 100,
 
     "Help": [
