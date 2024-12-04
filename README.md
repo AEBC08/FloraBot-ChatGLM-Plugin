@@ -1,7 +1,7 @@
 # FloraBot-ChatGLM-Plugin
 **一个 FloraBot 调用 ChatGLM 官方 API 进行 AI 聊天的插件**
 ## 安装插件
-**通过此链接下载: [`https://github.com/AEBC08/FloraBot-NCMPlugin/archive/main.zip`](https://github.com/AEBC08/FloraBot-NCMPlugin/archive/main.zip)**  
+**通过此链接下载: [`https://github.com/AEBC08/FloraBot-ChatGLM-Plugin/archive/main.zip`](https://github.com/AEBC08/FloraBot-ChatGLM-Plugin/archive/main.zip)**  
 **然后解压到 FloraBot安装目录/FloraBot/Plugin**  
 **进入插件文件夹, 编辑其中的 Plugin.json**  
 **将键 ChatGLMApiKey 的值改成你的 ChatGLM ApiKey**  
