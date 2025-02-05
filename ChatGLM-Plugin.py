@@ -42,7 +42,7 @@ def chat_glm(msgs: list):  # 调用 ChatGLM 进行聊天的函数
         msg.pop("tool_calls")
         return msg
     except APIStatusError as error:
-        return f"Api异常\n状态码: {error.status_code}\n响应内容: {json.dumps(error.response.text, ensure_ascii=False, indent=4)}"
+        return f"Api异常\n状态码: {error.status_code}\n响应内容: {json.dumps(error.response.json(), ensure_ascii=False, indent=4)}"
 
 
 def event(data: dict):  # 事件函数,FloraBot每收到一个事件都会调用这个函数(若插件已设为禁用则不调用),传入原消息JSON参数
